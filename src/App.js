@@ -1,4 +1,4 @@
-import './App.css';
+//import './App.css';
 import Tab from "./components/Tab";
 
 const jobs = require("./assets/jobs.json");
