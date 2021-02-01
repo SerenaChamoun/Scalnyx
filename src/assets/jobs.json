@@ -1,0 +1,58 @@
+[
+    {
+        "batch_nb":"1",
+        "job_nb":"1",
+        "input_file_name":"big_asx_dummy.xml",
+        "complexity":"0",
+        "executed_by":"pineapple",
+        "calibrator_version":"0",
+        "date":"11/02/2020-13:46:41",
+        "duration":"48.53",
+        "status":"Done",
+        "error_code":"0",
+        "result_link":"ouptut file", 
+        "action":""
+    },
+    {
+        "batch_nb":"1",
+        "job_nb":"2",
+        "input_file_name":"small_asx_dummy.xml",
+        "complexity":"0",
+        "executed_by":"pineapple",
+        "calibrator_version":"0",
+        "date":"11/02/2020-13:47:19",
+        "duration":"26.13",
+        "status":"Done",
+        "error_code":"0",
+        "result_link":"ouptut file", 
+        "action":""
+    },
+    {
+        "batch_nb":"2",
+        "job_nb":"3",
+        "input_file_name":"afh_dummy.xml",
+        "complexity":"0",
+        "executed_by":"grapefruit",
+        "calibrator_version":"0",
+        "date":"11/02/2020-13:48:12",
+        "duration":"",
+        "status":"Doing",
+        "error_code":"0",
+        "result_link":"", 
+        "action":["kill_job","kill_batch"]
+    },
+    {
+        "batch_nb":"3",
+        "job_nb":"4",
+        "input_file_name":"asx_dummy.xml",
+        "complexity":"0",
+        "executed_by":"",
+        "calibrator_version":"0",
+        "date":"",
+        "duration":"",
+        "status":"Todo",
+        "error_code":"0",
+        "result_link":"output file", 
+        "action":""
+    }
+]
