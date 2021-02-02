@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import axios from "axios";
 import { Table, Button } from 'element-react';
 import 'element-theme-default';
 
@@ -7,7 +8,18 @@ import locale from 'element-react/src/locale/lang/en'
 
 i18n.use(locale);
 
-const Tab = ({jobs}) => {
+const Tab = () => {
+  const [jobs, setJobs]=useState([]);
+ 
+  // APPEL API POUR FETCHER LA DATA
+  useEffect(()=>{
+    const fetchData =async()=>{
+      const response = await axios.post(`http://82.123.41.126:8080/api/get_table_content/`);
+      setJobs(Object.keys(response.data).map(key=>{return response.data[key]}))
+    };
+    fetchData(); 
+  }, [])
+
     const columns = [
         {
             label: "Batch nb",
